@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(255, 231, 202);
+  margin: 0;
+  font-family: Arial, sans-serif; 
+}
+
+.headerClass {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  background-color: rgb(228, 203, 203);
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+ul {
+  font-size: 26px;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0;
+}
+
+h1 {
+  font-size: 36px; 
+}
+
+main {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+@media (max-width: 390px) {
+  ul {
+    font-size: 10px; /* Уменьшаем размер шрифта*/
+  }
+
+  h1 {
+    font-size: 14px; /* Уменьшаем размер заголовка*/
+  }
+
+  main {
+    padding: 10px; /* Уменьшаем внутренние отступы */
+  }
+}

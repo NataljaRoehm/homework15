@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Информация о клиентах</title>
+    <link rel="stylesheet" href="styleClientInfo3.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="headerClass">
+        <ul>
+         <li><a href="index.html">Главная</a></li>
+         <li><a href="input.html">Ввод данных</a></li>
+         <li><a href="clientsInfo3.html">Информация о клиентах</a></li>
+         <li><a href="contact.html">Контакты</a></li>
+     </ul>
+ </header>
+    <main class="infoClient">
+        <h1>Информация о клиентах</h1>
+        <form id="form-items" action="">
+            <input name="form-name" placeholder="имя клиента" type="text" required>
+            <button type="submit">Загрузить</button>
+          </form>
+          
+          <div id="loader" style="display: none" class="loader"></div>
+          <div style="display: none" id="content">
+            <h3>Product list</h3>
+            <ul id="name-list"></ul>
+          </div>
+    <div id="clientsContainer"></div>
+    </main>
+    
+    <script src="script3.js"></script>
+</body>
+</html>

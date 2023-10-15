@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.headerClass {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgb(228, 203, 203);
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+ul {
+    font-size: 26px;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.contact {
+    margin-bottom: 20px;
+}
+
+.contact main {
+    list-style-type: none;
+    padding: 0;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #333;
+    margin: 5px;
+}
+
+.contact h1 {
+    color: #333;
+}
+
+.contact p {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+@media (max-width: 390px) {
+    ul {
+        font-size: 18px; /* Уменьшаем размер шрифта */
+    }
+
+    .container {
+        max-width: 90%; /* Уменьшаем максимальную ширину контейнера */
+    }
+
+    .contact main {
+        flex-direction: column; /* Переключаем элементы в колонку */
+        align-items: flex-start; /* Выравниваем элементы влево */
+    }
+
+    .contact a, .contact h1, .contact p {
+        font-size: 16px; /* Уменьшаем размер шрифта в контактной информации */
+    }
+}

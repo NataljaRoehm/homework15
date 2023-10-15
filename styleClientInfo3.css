@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    text-align: center;
+  }
+  
+  .headerClass {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgb(228, 203, 203);
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    font-size: 26px;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0;
+  }
+  
+  .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #893319;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 0.7s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (max-width: 390px) {
+    body {
+      font-size: 14px; /*изменения размера шрифта */
+    }
+  
+    .headerClass {
+      padding: 5px; /*изменения отступа */
+    }
+  
+    ul {
+      font-size: 18px; /*изменения размера шрифта меню */
+    }
+  }
